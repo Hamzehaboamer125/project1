@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" integrity="sha512-kb1CHTNhoLzinkElTgWn246D6pX22xj8jFNKsDmVwIQo+px7n1yjJUZraVuR/ou6Kmgea4vZXZeUDbqKtXkEMg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+</head>
+
+<style>
+    .section1{
+        background: linear-gradient(red , blue , green);
+
+    }
+
+    .section1 .headtitle{
+        color: white;
+        font-size: 25px;
+        text-decoration: line-through;
+        
+    }
+
+    
+
+    .section1 .headtitle:hover::before{
+        content: "today the last lesson";
+
+    }
+    .section1 .images img{
+        width: 100%;
+        height: auto;
+    }
+
+    .section1 .mydiv .images .img2{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+        transform: scale(20);
+        transition: 0.5s;
+    }
+
+    .section1 .mydiv:hover .images .img2{
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .mydiv .images{
+        position: relative;
+        overflow: hidden;
+    }
+
+    .section1 .mydiv ul li {
+        list-style: none;
+        /*display: block;*/
+
+
+    }
+
+    .section1 .mydiv ul{
+        color: crimson;
+       padding: 0px;
+       margin: 0px;
+    
+        position: absolute;
+        top: 50% ;
+        left:7px ;
+        transform: translateY(-50%);
+    }
+
+    .mydiv ul li a::before{
+        content: attr(data-tip);
+        color: red;
+        background-color: chartreuse;
+        padding: 7px 10px;
+        position: absolute;
+        top: 50%;
+        left: 25px;
+        transform: translateY(-50%);
+        white-space: nowrap;
+        display: none;
+    }
+    .mydiv ul li a:hover::before{
+        display: block;
+
+    }
+
+    .mydiv:hover ul li{
+        transform: translateX(0);
+    }
+
+    #id1{
+        color: brown;
+        margin: 15px;
+        font-weight: bolder;
+        font-size: 20px;
+        text-decoration: line-through;
+
+    }
+
+    #id2{
+        color: darkgoldenrod;
+
+    }
+
+</style>
+
+
+<body>
+
+    <section class=" section1 text-center  animate__swing" data-wow-duration="5s" data-wow-delay="3s" data-wow-iteration="infinite" >
+        <div class="headtitle">
+            <h1  > welcome to my Electronic Shop</h1>
+          
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12  " >
+
+                    <div class="mydiv"  >
+                        <div class="images ">
+                            <a href="">
+                                <img class="img1" src="img-1.jpg" >
+                                <img class="img2" src="img-2.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a  href="mentshirt.html">Men Tshirt</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- **************Second div****************** -->
+
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+
+                    <div class="mydiv">
+                        <div class="images">
+                            <a href="">
+                                <img class="img1" src="img-3.jpg" >
+                                <img class="img2" src="img-4.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"> <i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a href="shoes.html">Men shoes</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- **********************third Div****************** -->
+
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+
+                    <div class="mydiv">
+                        <div class="images">
+                            <a href="">
+                                <img class="img1" src="img-5.jpg" >
+                                <img class="img2" src="img-6.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a href="women.html">women Tshirt</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- *****fourth Div******************** -->
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+
+                    <div class="mydiv">
+                        <div class="images">
+                            <a href="">
+                                <img class="img1" src="img-7.jpg" >
+                                <img class="img2" src="img-8.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a href="womenshoes.html">women shoes</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <svg id="azzam"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e7008a" fill-opacity="1" d="M0,256L8.3,250.7C16.6,245,33,235,50,202.7C66.2,171,83,117,99,112C115.9,107,132,149,149,192C165.5,235,182,277,199,256C215.2,235,232,149,248,144C264.8,139,281,213,298,240C314.5,267,331,245,348,218.7C364.1,192,381,160,397,128C413.8,96,430,64,447,69.3C463.4,75,480,117,497,144C513.1,171,530,181,546,208C562.8,235,579,277,596,272C612.4,267,629,213,646,192C662.1,171,679,181,695,197.3C711.7,213,728,235,745,213.3C761.4,192,778,128,794,128C811,128,828,192,844,234.7C860.7,277,877,299,894,261.3C910.3,224,927,128,943,122.7C960,117,977,203,993,250.7C1009.7,299,1026,309,1043,288C1059.3,267,1076,213,1092,197.3C1109,181,1126,203,1142,224C1158.6,245,1175,267,1192,266.7C1208.3,267,1225,245,1241,245.3C1257.9,245,1274,267,1291,256C1307.6,245,1324,203,1341,160C1357.2,117,1374,75,1390,85.3C1406.9,96,1423,160,1432,192L1440,224L1440,320L1431.7,320C1423.4,320,1407,320,1390,320C1373.8,320,1357,320,1341,320C1324.1,320,1308,320,1291,320C1274.5,320,1258,320,1241,320C1224.8,320,1208,320,1192,320C1175.2,320,1159,320,1142,320C1125.5,320,1109,320,1092,320C1075.9,320,1059,320,1043,320C1026.2,320,1010,320,993,320C976.6,320,960,320,943,320C926.9,320,910,320,894,320C877.2,320,861,320,844,320C827.6,320,811,320,794,320C777.9,320,761,320,745,320C728.3,320,712,320,695,320C678.6,320,662,320,646,320C629,320,612,320,596,320C579.3,320,563,320,546,320C529.7,320,513,320,497,320C480,320,463,320,447,320C430.3,320,414,320,397,320C380.7,320,364,320,348,320C331,320,314,320,298,320C281.4,320,265,320,248,320C231.7,320,215,320,199,320C182.1,320,166,320,149,320C132.4,320,116,320,99,320C82.8,320,66,320,50,320C33.1,320,17,320,8,320L0,320Z"></path></svg>
+
+
+    <!-- **********************Strat Section2****************** -->
+    <section class=" section1 text-center wow animate__flipInY"  data-wow-duration="5s" data-wow-offset="700" >
+        <div class="headtitle">
+            <h1  > welcome to my Electronic Shop</h1>
+          
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12  " >
+
+                    <div class="mydiv wow ">
+                        <div class="images ">
+                            <a href="">
+                                <img class="img1" src="img-1.jpg" >
+                                <img class="img2" src="img-2.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a  href="mentshirt.html">Men Tshirt</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- **************Second div****************** -->
+
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+
+                    <div class="mydiv">
+                        <div class="images">
+                            <a href="">
+                                <img class="img1" src="img-3.jpg" >
+                                <img class="img2" src="img-4.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"> <i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a href="shoes.html">Men shoes</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- **********************third Div****************** -->
+
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+
+                    <div class="mydiv">
+                        <div class="images">
+                            <a href="">
+                                <img class="img1" src="img-5.jpg" >
+                                <img class="img2" src="img-6.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a href="women.html">women Tshirt</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- *****fourth Div******************** -->
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+
+                    <div class="mydiv">
+                        <div class="images">
+                            <a href="">
+                                <img class="img1" src="img-7.jpg" >
+                                <img class="img2" src="img-8.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a href="womenshoes.html">women shoes</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--*************************** Start Section3******************************* -->
+
+    <section class=" section1 text-center wow animate__fadeInRightBig"  data-wow-duration="5s" data-wow-offset="800" >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00cba9" fill-opacity="1" d="M0,0L102.9,224L205.7,192L308.6,224L411.4,128L514.3,288L617.1,96L720,128L822.9,96L925.7,0L1028.6,96L1131.4,288L1234.3,256L1337.1,192L1440,256L1440,320L1337.1,320L1234.3,320L1131.4,320L1028.6,320L925.7,320L822.9,320L720,320L617.1,320L514.3,320L411.4,320L308.6,320L205.7,320L102.9,320L0,320Z"></path></svg>
+        <div class="headtitle">
+            <h1  > welcome to my Electronic Shop</h1>
+          
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12  " >
+
+                    <div class="mydiv"  >
+                        <div class="images ">
+                            <a href="">
+                                <img class="img1" src="img-1.jpg" >
+                                <img class="img2" src="img-2.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a  href="mentshirt.html">Men Tshirt</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- **************Second div****************** -->
+
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+
+                    <div class="mydiv">
+                        <div class="images">
+                            <a href="">
+                                <img class="img1" src="img-3.jpg" >
+                                <img class="img2" src="img-4.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"> <i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a href="shoes.html">Men shoes</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- **********************third Div****************** -->
+
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+
+                    <div class="mydiv">
+                        <div class="images">
+                            <a href="">
+                                <img class="img1" src="img-5.jpg" >
+                                <img class="img2" src="img-6.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a href="women.html">women Tshirt</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- *****fourth Div******************** -->
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+
+                    <div class="mydiv">
+                        <div class="images">
+                            <a href="">
+                                <img class="img1" src="img-7.jpg" >
+                                <img class="img2" src="img-8.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a href="womenshoes.html">women shoes</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ************************start section4****************************** -->
+    <section class=" section1 text-center wow animate__bounceInDown" data-wow-duration="5s" >
+        <div class="headtitle">
+            <h1  > welcome to my Electronic Shop</h1>
+          
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12  " >
+
+                    <div class="mydiv"  >
+                        <div class="images ">
+                            <a href="">
+                                <img class="img1" src="img-1.jpg" >
+                                <img class="img2" src="img-2.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a  href="mentshirt.html">Men Tshirt</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- **************Second div****************** -->
+
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+
+                    <div class="mydiv">
+                        <div class="images">
+                            <a href="">
+                                <img class="img1" src="img-3.jpg" >
+                                <img class="img2" src="img-4.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"> <i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a href="shoes.html">Men shoes</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- **********************third Div****************** -->
+
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+
+                    <div class="mydiv">
+                        <div class="images">
+                            <a href="">
+                                <img class="img1" src="img-5.jpg" >
+                                <img class="img2" src="img-6.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a href="women.html">women Tshirt</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- *****fourth Div******************** -->
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+
+                    <div class="mydiv">
+                        <div class="images">
+                            <a href="">
+                                <img class="img1" src="img-7.jpg" >
+                                <img class="img2" src="img-8.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a href="womenshoes.html">women shoes</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ***********************Strat section5******************** -->
+    <section class=" section1 text-center  animate__backInUp" data-wow-duration="5s" >
+        <div class="headtitle">
+            <h1  > welcome to my Electronic Shop</h1>
+          
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 " >
+                    <div class="mydiv"  >
+                        <div class="images ">
+                            <a href="">
+                                <img class="img1" src="img-1.jpg" >
+                                <img class="img2" src="img-2.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a  href="mentshirt.html">Men Tshirt</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- **************Second div****************** -->
+
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+
+                    <div class="mydiv">
+                        <div class="images">
+                            <a href="">
+                                <img class="img1" src="img-3.jpg" >
+                                <img class="img2" src="img-4.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"> <i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a href="shoes.html">Men shoes</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- **********************third Div****************** -->
+
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+
+                    <div class="mydiv">
+                        <div class="images">
+                            <a href="">
+                                <img class="img1" src="img-5.jpg" >
+                                <img class="img2" src="img-6.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a href="women.html">women Tshirt</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- *****fourth Div******************** -->
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+
+                    <div class="mydiv">
+                        <div class="images">
+                            <a href="">
+                                <img class="img1" src="img-7.jpg" >
+                                <img class="img2" src="img-8.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a href="womenshoes.html">women shoes</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ********************start section6*************************** -->
+
+    <section class=" section1 text-center animate__rubberBand" data-wow-duration="5s" data-wow-delay="3s" data-wow-iteration="infinite">
+        <div class="headtitle">
+            <h1  > welcome to my Electronic Shop</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e7008a" fill-opacity="1" d="M0,288L0,64L46.5,64L46.5,160L92.9,160L92.9,32L139.4,32L139.4,32L185.8,32L185.8,160L232.3,160L232.3,256L278.7,256L278.7,320L325.2,320L325.2,192L371.6,192L371.6,160L418.1,160L418.1,128L464.5,128L464.5,192L511,192L511,288L557.4,288L557.4,128L603.9,128L603.9,32L650.3,32L650.3,288L696.8,288L696.8,288L743.2,288L743.2,160L789.7,160L789.7,32L836.1,32L836.1,288L882.6,288L882.6,192L929,192L929,224L975.5,224L975.5,256L1021.9,256L1021.9,320L1068.4,320L1068.4,160L1114.8,160L1114.8,320L1161.3,320L1161.3,288L1207.7,288L1207.7,256L1254.2,256L1254.2,96L1300.6,96L1300.6,320L1347.1,320L1347.1,128L1393.5,128L1393.5,96L1440,96L1440,320L1393.5,320L1393.5,320L1347.1,320L1347.1,320L1300.6,320L1300.6,320L1254.2,320L1254.2,320L1207.7,320L1207.7,320L1161.3,320L1161.3,320L1114.8,320L1114.8,320L1068.4,320L1068.4,320L1021.9,320L1021.9,320L975.5,320L975.5,320L929,320L929,320L882.6,320L882.6,320L836.1,320L836.1,320L789.7,320L789.7,320L743.2,320L743.2,320L696.8,320L696.8,320L650.3,320L650.3,320L603.9,320L603.9,320L557.4,320L557.4,320L511,320L511,320L464.5,320L464.5,320L418.1,320L418.1,320L371.6,320L371.6,320L325.2,320L325.2,320L278.7,320L278.7,320L232.3,320L232.3,320L185.8,320L185.8,320L139.4,320L139.4,320L92.9,320L92.9,320L46.5,320L46.5,320L0,320L0,320Z"></path></svg>
+          
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12  " >
+
+                    <div class="mydiv"  >
+                        <div class="images ">
+                            <a href="">
+                                <img class="img1" src="img-1.jpg" >
+                                <img class="img2" src="img-2.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a  href="mentshirt.html">Men Tshirt</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- **************Second div****************** -->
+
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+
+                    <div class="mydiv">
+                        <div class="images">
+                            <a href="">
+                                <img class="img1" src="img-3.jpg" >
+                                <img class="img2" src="img-4.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"> <i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a href="shoes.html">Men shoes</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- **********************third Div****************** -->
+
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+
+                    <div class="mydiv">
+                        <div class="images">
+                            <a href="">
+                                <img class="img1" src="img-5.jpg" >
+                                <img class="img2" src="img-6.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a href="women.html">women Tshirt</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- *****fourth Div******************** -->
+
+                <div class="col-lg-3 col-md-6 col-sm-12">
+
+                    <div class="mydiv">
+                        <div class="images">
+                            <a href="">
+                                <img class="img1" src="img-7.jpg" >
+                                <img class="img2" src="img-8.jpg" >
+                            </a>
+
+                            <ul class="fontausom">
+                                <li><a href="" data-tip="Add To Cart"><i class="fas fa-shopping-cart"></i></a></li>
+                                <li><a href="" data-tip="Wishlist"><i class="fas fa-heart"></i></a></li>
+                                <li><a href="" data-tip="Compare"><i class="fas fa-desktop"></i></a></li>
+                                <li><a href="" data-tip="Search"><i class="fas fa-search"></i></a></li>
+                            </ul>
+                            
+                        </div>
+
+                        <div class="price">
+                            <h3><a href="womenshoes.html">women shoes</a></h3>
+                            <div class="discount"><span id="id1">200$</span> <span id="id2">100$</span></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 120"><path fill="#ff5500" fill-opacity="0.5" d="M0,96L65.5,320L130.9,256L196.4,96L261.8,192L327.3,32L392.7,224L458.2,64L523.6,320L589.1,64L654.5,288L720,64L785.5,224L850.9,160L916.4,192L981.8,224L1047.3,32L1112.7,0L1178.2,160L1243.6,288L1309.1,160L1374.5,96L1440,128L1440,320L1374.5,320L1309.1,320L1243.6,320L1178.2,320L1112.7,320L1047.3,320L981.8,320L916.4,320L850.9,320L785.5,320L720,320L654.5,320L589.1,320L523.6,320L458.2,320L392.7,320L327.3,320L261.8,320L196.4,320L130.9,320L65.5,320L0,320Z"></path></svg>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
+<script>
+    new WOW().init();
+</script>
+
+
+</body>
+</html>
